@@ -22,7 +22,7 @@ sistema-delivery-bd/
 ├── schema.sql              → DDL: criação do banco e das tabelas
 ├── dados.sql               → DML: inserção dos dados de exemplo
 ├── consultas.sql           → 10 consultas SQL comentadas
-├── dicionario\\\_de\\\_dados.md  → Descrição detalhada de tabelas e colunas
+├── dicionario\\\\\\\\\\\\\\\_de\\\\\\\\\\\\\\\_dados.md  → Descrição detalhada de tabelas e colunas
 ├── relatorio.md            → Relatório técnico completo do projeto
 ├── der.png                 → Diagrama Entidade-Relacionamento
 └── README.md               → Este arquivo
@@ -33,7 +33,7 @@ sistema-delivery-bd/
 ## 🗃️ Banco de Dados
 
 * **SGBD:** MySQL
-* **Nome do banco:** `delivery\\\_db`
+* **Nome do banco:** `delivery\\\\\\\\\\\\\\\_db`
 * **Total de tabelas:** 9
 * **Registros por tabela:** 15
 
@@ -45,11 +45,11 @@ sistema-delivery-bd/
 |`endereco`|Endereços de entrega vinculados aos clientes|
 |`restaurante`|Estabelecimentos cadastrados|
 |`categoria`|Tipos de culinária disponíveis|
-|`restaurante\\\_categoria`|Relacionamento N:N entre restaurante e categoria|
+|`restaurante\\\\\\\\\\\\\\\_categoria`|Relacionamento N:N entre restaurante e categoria|
 |`produto`|Itens do cardápio de cada restaurante|
 |`entregador`|Profissionais responsáveis pelas entregas|
 |`pedido`|Pedidos realizados pelos clientes|
-|`item\\\_pedido`|Relacionamento N:N entre pedido e produto|
+|`item\\\\\\\\\\\\\\\_pedido`|Relacionamento N:N entre pedido e produto|
 
 \---
 
@@ -89,7 +89,7 @@ mysql -u root -p < dados.sql
 5. Execute as consultas:
 
 ```bash
-mysql -u root -p delivery\\\_db < consultas.sql
+mysql -u root -p delivery\\\\\\\\\\\\\\\_db < consultas.sql
 ```
 
 > Ou abra os arquivos `.sql` diretamente no MySQL Workbench e execute na ordem: `schema.sql` → `dados.sql` → `consultas.sql`
@@ -98,7 +98,7 @@ mysql -u root -p delivery\\\_db < consultas.sql
 
 ## 📊 Diagrama Entidade-Relacionamento
 
-!\[Diagrama ER](der.png)
+!\[Diagrama ER](./der.png)
 
 \---
 
